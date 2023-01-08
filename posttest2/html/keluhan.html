@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/keluhan.css">
+    <title>Keluhan</title>
+</head>
+<body>
+    
+<div class="main2">
+    <div class="navbar">
+        <label class="logo">UD.H</label>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="garis"><a href="keluhan.html">keluhan</a></li>
+            <li><a href="lokasi.html">Lokasi</a></li>
+        </ul>
+    </div>
+    <div class="keluhan">
+        <form action="#">
+        <h1>Keluhan</h1>
+        <div class="user">
+            <div class="input-box">
+                <span class="detail">Nama</span>
+                <input type="text" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="input-box">
+                <span class="detail">Hari Pembelian</span>
+                <select class="select" name="angkatan" required>
+                    <option>Senin</option>
+                    <option>Selasa</option>
+                    <option>Rabu</option>
+                    <option>Kamis</option>
+                    <option>Jumat</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <span class="detail">Password</span>
+                <input type="password" placeholder="Masukkan Password Anda">
+            </div>
+            <div class="input-box">
+                <span class="detail">Nomor Hp</span>
+                <input type="text" pattern="[0-9]" placeholder="Masukkan Nomor Hp Anda">
+            </div>
+            <div class="input-box2">
+                <span class="details">Keluhan</span>
+                <textarea type="text" name="nama_wisata" placeholder="Masukkan Alasan Kamu" 
+                            rows="0"
+                            cols="0"required>
+                </textarea>
+            </div>
+            <div class="input-box">
+                <span class="topp">Kayu Pilihan</span>
+                <div class="topp">
+                    <input class="checkbox" type="checkbox" id="Meranti">
+                    <label class="check" for="Meranti">Meranti</label>
+                </div>
+                <div>
+                    <input class="checkbox" type="checkbox" id="Ulin">
+                    <label class="check" for="Ulin">Ulin</label>
+                </div>
+                <div>
+                    <input class="checkbox" type="checkbox" id="Bengkirai">
+                    <label class="check" for="Bengkirai">Bengkirai</label>
+                </div>
+                <div>
+                    <input class="checkbox" type="checkbox" id="Kapur">
+                    <label class="check" for="Kapur">Kapur</label>
+                </div>
+            </div>
+            <div class="input-box">
+                <span class="detail">Masukkan Gambar </span>
+                <label class="gambar">
+                      <input type="file" name="gambar" required />
+                      <span class="label">Pilih Gambar</span>
+                </label>
+            </div>
+        </div>
+        <div class="jenis-kelamin">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">            
+            <span class="judulg">Jenis Kelamin</span>
+            <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Pria</span>
+                </label>
+                <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Wanita</span>
+                </label>                
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Masukan">
+        </div>
+        </form>
+    </div>
+</div>   
+<footer>    
+    <p>@ Copyright 2023 Rizq Saputra</p>
+</footer>
+</body>
+</html>
